@@ -1,0 +1,26 @@
+﻿// --------------------------------------------------------
+// Copyright (c) Coalition of Good-Hearted Engineers
+// Developed by Abdurahmonov-azizbek
+// --------------------------------------------------------
+
+namespace BeMaster.Domain.Common.Settings
+{
+    public class JwtSettings
+    {
+        public bool ValidateIssuer { get; set; }
+            
+        public string ValidIssuer { get; set; } = default!;
+
+        public bool ValidateAudience { get; set; }
+
+        public string ValidAudience { get; set; } = default!;
+
+        public bool ValidateLifeTime { get; set; } = default!;
+
+        public int ExpirationTimeInMinutes { get; set; }
+
+        public bool ValidateIssuerSigningKey { get; set; }
+
+        public string SecretKey { get; set; } = default!;
+    }
+}
